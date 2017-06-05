@@ -9,7 +9,6 @@ This project illustrates how to use AVAudioEngine to mix background music and mi
 
 
 
-
 ## Features
 
 * Using Accelerate framework to meter input power level
