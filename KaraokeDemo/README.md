@@ -6,7 +6,8 @@ This project illustrates how to use AVAudioEngine to mix background music and mi
 ![ScreenShot](https://raw.github.com/JagieChen/KaraokeDemo/master/snapshot.png)
 
 
- 
+
+
 
 
 ## Features
