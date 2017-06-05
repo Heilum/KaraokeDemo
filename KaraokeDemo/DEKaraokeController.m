@@ -83,7 +83,10 @@
         [playerNodeForOutput stop];
         [weakSelf stop];
         if (musicFinishCallback != nil){
-            musicFinishCallback();
+            dispatch_async(dispatch_get_main_queue(), ^{
+               musicFinishCallback();
+            });
+           
         }
     }];
     
