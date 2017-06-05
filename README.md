@@ -21,25 +21,25 @@ self.karaoke = [[DEKaraokeController alloc] initWithBgMusic:[self bgMp3FileURL] 
 ....
 
 - (IBAction)onStart:(id)sender {
-UIButton *btn = sender;
-if(self.karaoke.isRunning == NO){
-__weak ViewController *weakSelf = self;
-[self.karaoke startWithPowerLevelChangeCallback:^(float p)  {
-weakSelf.meterLabel.text = [NSString stringWithFormat:@"%f",p];
-} musicFinishCallback:^{
-weakSelf.recordBtn.selected = NO;
-weakSelf.replayBtn.enabled = YES;
-}];
-btn.selected = YES;
-self.replayBtn.enabled = NO;
+    UIButton *btn = sender;
+    if(self.karaoke.isRunning == NO){
+    __weak ViewController *weakSelf = self;
+    [self.karaoke startWithPowerLevelChangeCallback:^(float p)  {
+        weakSelf.meterLabel.text = [NSString stringWithFormat:@"%f",p];
+    } musicFinishCallback:^{
+        weakSelf.recordBtn.selected = NO;
+        weakSelf.replayBtn.enabled = YES;
+    }];
+    btn.selected = YES;
+    self.replayBtn.enabled = NO;
 
 }else{
-//stop
-[self.karaoke stop];
-self.recordBtn.selected = NO;
-self.replayBtn.enabled = YES;
+    //stop
+    [self.karaoke stop];
+    self.recordBtn.selected = NO;
+    self.replayBtn.enabled = YES;
 
-}
+   }
 
 }
 
@@ -50,6 +50,7 @@ self.replayBtn.enabled = YES;
 
 ## References
 https://blog.metova.com/audio-manipulation-using-avaudioengine
+
 https://stackoverflow.com/questions/30641439/level-metering-with-avaudioengine
 
 ## License
