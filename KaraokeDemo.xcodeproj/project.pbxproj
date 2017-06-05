@@ -13,7 +13,8 @@
 		7B129ADB1EE42477004E0372 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B129AD91EE42477004E0372 /* Main.storyboard */; };
 		7B129ADD1EE42477004E0372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B129ADC1EE42477004E0372 /* Assets.xcassets */; };
 		7B129AE01EE42477004E0372 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B129ADE1EE42477004E0372 /* LaunchScreen.storyboard */; };
-		7B129AE81EE424B3004E0372 /* bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B129AE71EE424B3004E0372 /* bg.mp3 */; };
+		7B4083131EE5694E0061A3EF /* DEKaraokeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4083121EE5694E0061A3EF /* DEKaraokeController.m */; };
+		7B4083151EE5932B0061A3EF /* bg.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7B4083141EE5932B0061A3EF /* bg.m4a */; };
 		7BE5D1F21EE559E8000B5503 /* snapshot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BE5D1F11EE559E8000B5503 /* snapshot.jpg */; };
 		7BE5D1F61EE563FE000B5503 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 7BE5D1F51EE563FE000B5503 /* README.md */; };
 /* End PBXBuildFile section */
@@ -29,7 +30,9 @@
 		7B129ADC1EE42477004E0372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B129ADF1EE42477004E0372 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B129AE11EE42477004E0372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B129AE71EE424B3004E0372 /* bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg.mp3; sourceTree = "<group>"; };
+		7B4083111EE5694E0061A3EF /* DEKaraokeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEKaraokeController.h; sourceTree = "<group>"; };
+		7B4083121EE5694E0061A3EF /* DEKaraokeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEKaraokeController.m; sourceTree = "<group>"; };
+		7B4083141EE5932B0061A3EF /* bg.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = bg.m4a; sourceTree = "<group>"; };
 		7BE5D1F11EE559E8000B5503 /* snapshot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snapshot.jpg; sourceTree = "<group>"; };
 		7BE5D1F51EE563FE000B5503 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,8 +68,8 @@
 		7B129ACF1EE42477004E0372 /* KaraokeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7B4083141EE5932B0061A3EF /* bg.m4a */,
 				7BE5D1F11EE559E8000B5503 /* snapshot.jpg */,
-				7B129AE71EE424B3004E0372 /* bg.mp3 */,
 				7B129AD31EE42477004E0372 /* AppDelegate.h */,
 				7B129AD41EE42477004E0372 /* AppDelegate.m */,
 				7B129AD61EE42477004E0372 /* ViewController.h */,
@@ -76,6 +79,8 @@
 				7B129ADE1EE42477004E0372 /* LaunchScreen.storyboard */,
 				7B129AE11EE42477004E0372 /* Info.plist */,
 				7B129AD01EE42477004E0372 /* Supporting Files */,
+				7B4083111EE5694E0061A3EF /* DEKaraokeController.h */,
+				7B4083121EE5694E0061A3EF /* DEKaraokeController.m */,
 			);
 			path = KaraokeDemo;
 			sourceTree = "<group>";
@@ -148,7 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B129AE01EE42477004E0372 /* LaunchScreen.storyboard in Resources */,
-				7B129AE81EE424B3004E0372 /* bg.mp3 in Resources */,
+				7B4083151EE5932B0061A3EF /* bg.m4a in Resources */,
 				7BE5D1F21EE559E8000B5503 /* snapshot.jpg in Resources */,
 				7B129ADD1EE42477004E0372 /* Assets.xcassets in Resources */,
 				7B129ADB1EE42477004E0372 /* Main.storyboard in Resources */,
@@ -165,6 +170,7 @@
 				7B129AD81EE42477004E0372 /* ViewController.m in Sources */,
 				7B129AD51EE42477004E0372 /* AppDelegate.m in Sources */,
 				7BE5D1F61EE563FE000B5503 /* README.md in Sources */,
+				7B4083131EE5694E0061A3EF /* DEKaraokeController.m in Sources */,
 				7B129AD21EE42477004E0372 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

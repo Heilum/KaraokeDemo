@@ -13,6 +13,17 @@ This project illustrates how to use AVAudioEngine to mix background music and mi
 
 * Using Accelerate framework to meter input power level
 
+## How to use
+<pre><code>
+ self.karaoke = [[DEKaraokeController alloc] initWithBgMusic:[self bgMp3FileURL] outputURL:[self recordFileURL]];
+ 
+....
+
+
+
+
+</code></pre>
+
 ## References
 https://blog.metova.com/audio-manipulation-using-avaudioengine
 https://stackoverflow.com/questions/30641439/level-metering-with-avaudioengine
