@@ -1,13 +1,5 @@
-#KaraokeDemo
-
-
-This project illustrates how to use AVAudioEngine to mix background music and microphone input, just like karaoke.
 
 ![ScreenShot](https://raw.github.com/JagieChen/KaraokeDemo/master/KaraokeDemo/snapshot.jpg)
-
-
-
-
 
 ## Features
 
